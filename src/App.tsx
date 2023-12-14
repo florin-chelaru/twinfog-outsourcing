@@ -26,25 +26,25 @@ function App() {
       label: (strings) => strings.home,
       icon: <HomeIcon />,
       path: '/'
-    },
-    {
-      key: 'about',
-      label: (strings) => strings.about,
-      icon: <InfoIcon />,
-      path: '/about'
-    },
-    {
-      key: 'contact',
-      label: (strings) => strings.contact,
-      icon: <ContactMailIcon />,
-      path: '/contact'
-    },
-    {
-      key: 'credits',
-      label: (strings) => strings.credits,
-      icon: <AttributionIcon />,
-      path: '/credits'
     }
+    // {
+    //   key: 'about',
+    //   label: (strings) => strings.about,
+    //   icon: <InfoIcon />,
+    //   path: '/about'
+    // },
+    // {
+    //   key: 'contact',
+    //   label: (strings) => strings.contact,
+    //   icon: <ContactMailIcon />,
+    //   path: '/contact'
+    // },
+    // {
+    //   key: 'credits',
+    //   label: (strings) => strings.credits,
+    //   icon: <AttributionIcon />,
+    //   path: '/credits'
+    // }
   ]
 
   // Track route changes and send to Google Analytics
@@ -62,9 +62,9 @@ function App() {
             <Grid2 xs={12}>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                {/* <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/credits" element={<Credits />} />
+                <Route path="/credits" element={<Credits />} /> */}
               </Routes>
             </Grid2>
           </Grid2>

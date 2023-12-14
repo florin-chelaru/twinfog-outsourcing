@@ -37,6 +37,7 @@
     "@typescript-eslint/method-signature-style": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-empty-interface": "off",
-    "no-empty-pattern": "off"
+    "no-empty-pattern": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

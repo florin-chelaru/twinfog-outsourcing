@@ -1,20 +1,21 @@
-import * as React from 'react'
-import { useContext } from 'react'
+import MenuIcon from '@mui/icons-material/Menu'
+import { ListItem, ListItemIcon } from '@mui/material'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
+import Button from '@mui/material/Button'
 import Drawer from '@mui/material/Drawer'
 import IconButton from '@mui/material/IconButton'
 import List from '@mui/material/List'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
-import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
-import Button from '@mui/material/Button'
-import { ListItemIcon } from '@mui/material'
-import LocaleInfo from '../util/LocaleInfo'
-import { GlobalLocalizedData, LocaleContext, LocaleHandler } from '../store/LocaleProvider'
+import * as React from 'react'
+import { useContext } from 'react'
 import { Link as DomLink, useLocation } from 'react-router-dom'
+import { GlobalLocalizedData, LocaleContext, LocaleHandler } from '../store/LocaleProvider'
+import LocaleInfo from '../util/LocaleInfo'
+import ByteBlitzLogo from './ByteBlitzLogo'
 
 const drawerWidth = 240
 
@@ -41,14 +42,36 @@ export default function DrawerAppBar({ navItems }: DrawerAppBarProps) {
 
   const location = useLocation()
   const pageTitle =
-    navItems.find((item) => item.path === location.pathname && item.path !== '/')?.label(strings) ??
-    strings.websiteTitle
+    navItems
+      .find(
+        // (item) => item.path === location.pathname || (item.path === '/' && location.pathname === '')
+        (item) => item.path === location.pathname && item.path !== '/'
+      )
+      ?.label(strings) ?? '' //strings.websiteTitle
 
   const onLocaleChange = (l: LocaleInfo) => localeManager.changeLocale(l.locale)
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <List>
+        <ListItem>
+          <ListItemIcon>
+            <ByteBlitzLogo sx={{ display: { xs: 'flex', md: 'none', width: 36, height: 36 } }} />
+          </ListItemIcon>
+          <ListItemText>
+            <Typography
+              variant="h5"
+              noWrap
+              sx={{
+                display: { xs: 'flex', md: 'none' },
+                fontWeight: 700,
+                color: 'inherit',
+                textDecoration: 'none'
+              }}>
+              ByteBlitz
+            </Typography>
+          </ListItemText>
+        </ListItem>
         {navItems.map((item) => (
           <ListItemButton key={`listitem-${item.key}`} component={DomLink} to={item.path}>
             <ListItemIcon>{item.icon}</ListItemIcon>
@@ -72,6 +95,21 @@ export default function DrawerAppBar({ navItems }: DrawerAppBarProps) {
             sx={{ mr: 2, display: { md: 'none' } }}>
             <MenuIcon />
           </IconButton>
+          <ByteBlitzLogo sx={{ display: { xs: 'none', md: 'flex', width: 48, height: 48 } }} />
+          <Typography
+            variant="h5"
+            noWrap
+            sx={{
+              mr: 2,
+              ml: 2,
+              display: { xs: 'none', md: 'flex' },
+              flexGrow: 1,
+              fontWeight: 700,
+              color: 'inherit',
+              textDecoration: 'none'
+            }}>
+            ByteBlitz
+          </Typography>
           <Typography
             variant="h6"
             component="div"

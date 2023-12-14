@@ -18,7 +18,7 @@ export const EN_US: GlobalLocalizedData = {
   home: 'Home',
   language: 'Language',
   more: 'More',
-  websiteTitle: 'TODO',
+  websiteTitle: 'ByteBlitz',
   news: 'Latest News',
   readMore: 'Read more',
   signUp: 'Sign up'

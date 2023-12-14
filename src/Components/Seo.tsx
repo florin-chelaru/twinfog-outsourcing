@@ -9,7 +9,7 @@ interface SeoFields {
 }
 
 const EN_US: SeoFields = {
-  title: 'TODO',
+  title: 'ByteBlitz | Software Development',
   description: 'TODO'
 }
 
