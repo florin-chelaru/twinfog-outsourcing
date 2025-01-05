@@ -112,7 +112,7 @@ export default function Home({}: HomeProps) {
                 >
                   <CardMedia
                     component="img"
-                    image={withBaseURL('/static/img/woman-cloud-lightning-1.jpeg')}
+                    image={withBaseURL('/static/img/man-lightning-coding.jpeg')}
                     // For getting the image to stretch to the available space.
                     // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
                     sx={{
