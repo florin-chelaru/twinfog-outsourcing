@@ -17,6 +17,10 @@ import { withBaseURL } from '../util/string'
 import ByteBlitzLogo from '../Components/ByteBlitzLogo'
 import { Image } from '@mui/icons-material'
 import TwinfogLogo from '../Components/TwinfogLogo'
+import HeroCard from '../Components/HeroCard'
+import WhatWeDoCard from '../Components/WhartWeDoCard'
+import WhoWeWorkWithCard from '../Components/WhoWeWorkWithCard'
+import HowWeWorkCard from '../Components/HowWeWorkCard'
 
 export interface HomeProps {}
 
@@ -51,26 +55,23 @@ export default function Home({}: HomeProps) {
 
   const florinTestimonial = (
     <>
-      With over 15 years of experience as a Software Engineer and Tech Lead, I&#39;ve contributed to
-      major projects like Google Cloud Platform at tech giant <b>Alphabet</b>, Bing at{' '}
-      <b>Microsoft</b>, and Site Integrity (spam detection) at <b>Meta</b>.
+      With 15+ years of experience, I&apos;ve contributed to major projects like{' '}
+      <b>Google Cloud Platform (Alphabet)</b>, <b>Bing (Microsoft)</b>, and{' '}
+      <b>Site Integrity (Meta)</b>.
       <br />
-      <br />
-      Holding a PhD from the University of Maryland, College Park, and having completed a postdoc at
-      MIT, I developed{' '}
-      <Link href="https://github.com/epiviz/epiviz" target="_blank">
+      <br />I hold a PhD from the <b>University of Maryland, College Park</b> and completed a
+      postdoc at <b>MIT</b>, where I developed{' '}
+      <Link href="https://github.com/epiviz/epiviz" target="_blank" rel="noopener">
         Epiviz
       </Link>
-      , a visualization tool for large epigenetic data, featured in the{' '}
-      <Link href="https://www.nature.com/articles/nmeth.3038" target="_blank">
-        {' '}
-        Nature Methods magazine
+      , a visualization tool for large epigenetic data featured in{' '}
+      <Link href="https://www.nature.com/articles/nmeth.3038" target="_blank" rel="noopener">
+        Nature Methods
       </Link>{' '}
       and adopted by pharma giant <b>Genentech</b>.
       <br />
-      <br />I am a co-founder and CTO of the <b>ByteBlitz</b> parent company, <b>Twinfog Inc.</b>,
-      where I actively work alongside our team of skilled developers, fostering innovation and
-      driving efficient product development.
+      <br />I lead a small team of skilled engineers, focusing on building reliable,
+      production-ready systems and delivering high-impact products.
     </>
   )
 
@@ -95,290 +96,22 @@ export default function Home({}: HomeProps) {
         <Toolbar />
         <Grid2 container spacing={2}>
           <Grid2 xs={12}>
-            <Card>
-              <Grid2 container>
-                <Grid2
-                  xs={4}
-                  sm={4}
-                  md={6}
-                  // For getting the image to stretch to the available space.
-                  // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    overflow: 'hidden'
-                  }}
-                  // order={{ xs: 2, sm: 1 }}
-                >
-                  <CardMedia
-                    component="img"
-                    image={withBaseURL('/static/img/man-lightning-coding.jpeg')}
-                    // For getting the image to stretch to the available space.
-                    // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
-                    sx={{
-                      flexShrink: 0,
-                      minWidth: '100%',
-                      minHeight: '100%'
-                    }}
-                  />
-                </Grid2>
-                <Grid2 xs={8} sm={8} md={6}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      alignContent: 'center',
-                      height: '100%'
-                    }}>
-                    <CardContent>
-                      <Stack
-                        direction="row"
-                        sx={{
-                          alignItems: 'center'
-                        }}>
-                        <ByteBlitzLogo
-                          sx={{ display: { xs: 'flex', md: 'flex', width: 48, height: 48 } }}
-                        />
-                        <Stack direction="column">
-                          <Typography
-                            // gutterBottom
-                            variant="h5"
-                            noWrap
-                            component="h1"
-                            sx={{
-                              mr: 2,
-                              ml: 2,
-                              display: { xs: 'flex', md: 'flex' },
-                              flexGrow: 1,
-                              fontWeight: 700,
-                              color: 'inherit',
-                              textDecoration: 'none'
-                            }}>
-                            ByteBlitz
-                          </Typography>
-                          <Typography
-                            lineHeight="1"
-                            variant="subtitle2"
-                            noWrap
-                            sx={{
-                              mr: 2,
-                              ml: 2.5,
-                              display: { xs: 'flex', md: 'flex' },
-                              flexGrow: 1,
-                              fontWeight: 700,
-                              color: 'inherit',
-                              textDecoration: 'none'
-                            }}>
-                            by
-                            <TwinfogLogo sx={{ width: 72, height: 18, ml: 0.5 }} />
-                          </Typography>
-                        </Stack>
-                      </Stack>
-                      <Typography gutterBottom variant="subtitle2" component="div">
-                        Transforming concepts into viable products at lightning speed.
-                      </Typography>
-                      <br />
-                      <Typography
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        variant="body2"
-                        color="text.secondary">
-                        {companyDescription}
-                      </Typography>
-                    </CardContent>
-                    <CardActions sx={{ display: { xs: 'none', sm: 'block' } }}>
-                      {/* <Button
-                      size="small"
-                      color="primary"
-                      onClick={() => {
-                        // navigate('/lessons')
-                        // scrollToTop()
-                      }}>
-                      More
-                    </Button> */}
-                      <Button
-                        size="small"
-                        variant="contained"
-                        onClick={() => {
-                          // navigate('/contact')
-                          // scrollToTop()
-                        }}>
-                        {/* {strings.contactMe} */}
-                        Contact us
-                      </Button>
-                    </CardActions>
-                  </Box>
-                </Grid2>
-              </Grid2>
-              <CardContent sx={{ display: { xs: 'block', sm: 'none' } }}>
-                <Typography variant="body2" color="text.secondary">
-                  {companyDescription}
-                </Typography>
-              </CardContent>
-              <CardActions sx={{ display: { xs: 'block', sm: 'none' } }}>
-                {/* <Button
-                size="small"
-                color="primary"
-                onClick={() => {
-                  // navigate('/lessons')
-                  // scrollToTop()
-                }}>
-                More
-              </Button> */}
-                <Button
-                  size="small"
-                  variant="contained"
-                  onClick={() => {
-                    // navigate('/contact')
-                    // scrollToTop()
-                  }}>
-                  {/* {strings.contactMe} */}
-                  Contact us
-                </Button>
-              </CardActions>
-            </Card>
+            <HeroCard />
           </Grid2>
           <Grid2 xs={12}>
-            <Card>
-              <Grid2 container>
-                <Grid2 xs={8} sm={8} md={6}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      alignContent: 'center',
-                      height: '100%'
-                    }}>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        noWrap
-                        component="h1"
-                        sx={{
-                          display: { xs: 'flex', md: 'flex' },
-                          flexGrow: 1,
-                          fontWeight: 700,
-                          color: 'inherit',
-                          textDecoration: 'none'
-                        }}>
-                        Our mission
-                      </Typography>
-                      <Typography
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        variant="body2"
-                        color="text.secondary">
-                        {missionStatement}
-                      </Typography>
-                    </CardContent>
-                  </Box>
-                </Grid2>
-                <Grid2
-                  xs={4}
-                  sm={4}
-                  md={6}
-                  // For getting the image to stretch to the available space.
-                  // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    overflow: 'hidden'
-                  }}>
-                  <CardMedia
-                    component="img"
-                    image={withBaseURL('/static/img/mission-statement-2.jpeg')}
-                    alt="Mission statement illustration"
-                    // For getting the image to stretch to the available space.
-                    // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
-                    sx={{
-                      flexShrink: 0,
-                      minWidth: '100%',
-                      minHeight: '100%'
-                    }}
-                  />
-                </Grid2>
-              </Grid2>
-              <CardContent sx={{ display: { xs: 'block', sm: 'none' } }}>
-                <Typography variant="body2" color="text.secondary">
-                  {missionStatement}
-                </Typography>
-              </CardContent>
-            </Card>
+            <WhatWeDoCard />
+          </Grid2>
+          <Grid2 xs={12}>
+            <WhoWeWorkWithCard />
+          </Grid2>
+          <Grid2 xs={12}>
+            <HowWeWorkCard />
           </Grid2>
           <Grid2 xs={12} sx={{ justifyContent: 'center', alignItems: 'center' }}>
             <br />
             <Typography variant="h5" component="h2" sx={{ textAlign: 'center' }}>
-              Meet our founders
+              Meet the founder
             </Typography>
-          </Grid2>
-          <Grid2 xs={12}>
-            <Card>
-              <Grid2 container>
-                <Grid2 xs={8} sm={8} md={6}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      alignContent: 'center',
-                      height: '100%'
-                    }}>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant="h5"
-                        noWrap
-                        component="h1"
-                        sx={{
-                          display: { xs: 'flex', md: 'flex' },
-                          flexGrow: 1,
-                          fontWeight: 700,
-                          color: 'inherit',
-                          textDecoration: 'none'
-                        }}>
-                        Corneliu Serediuc
-                      </Typography>
-                      <Typography gutterBottom variant="subtitle2" component="div">
-                        Senior Engineer & CEO
-                      </Typography>
-                      <Typography
-                        sx={{ display: { xs: 'none', sm: 'block' } }}
-                        variant="body2"
-                        color="text.secondary">
-                        {corneliuTestimonial}
-                      </Typography>
-                    </CardContent>
-                  </Box>
-                </Grid2>
-                <Grid2
-                  xs={4}
-                  sm={4}
-                  md={6}
-                  // For getting the image to stretch to the available space.
-                  // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    overflow: 'hidden'
-                  }}>
-                  <CardMedia
-                    component="img"
-                    image={withBaseURL('/static/img/corneliu-serediuc.jpeg')}
-                    alt="Corneliu Serediuc"
-                    // For getting the image to stretch to the available space.
-                    // See https://stackoverflow.com/questions/14142378/how-can-i-fill-a-div-with-an-image-while-keeping-it-proportional
-                    sx={{
-                      flexShrink: 0,
-                      minWidth: '100%',
-                      minHeight: '100%'
-                    }}
-                  />
-                </Grid2>
-              </Grid2>
-              <CardContent sx={{ display: { xs: 'block', sm: 'none' } }}>
-                <Typography variant="body2" color="text.secondary">
-                  {corneliuTestimonial}
-                </Typography>
-              </CardContent>
-            </Card>
           </Grid2>
           <Grid2 xs={12}>
             <Card>
@@ -431,7 +164,12 @@ export default function Home({}: HomeProps) {
                         Florin Chelaru
                       </Typography>
                       <Typography gutterBottom variant="subtitle2" component="div">
-                        Senior Engineer & CTO
+                        <Link
+                          href="https://www.linkedin.com/in/florinchelaru/"
+                          target="_blank"
+                          rel="noopener">
+                          Find me on LinkedIn
+                        </Link>
                       </Typography>
                       <Typography
                         sx={{ display: { xs: 'none', sm: 'block' } }}
