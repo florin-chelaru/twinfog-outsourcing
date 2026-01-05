@@ -1,7 +1,7 @@
 {
-  "name": "twinfog-outsourcing",
+  "name": "twinfog",
   "version": "0.0.1",
-  "homepage": "https://twinfog.com",
+  "homepage": "https://florin-chelaru.github.io/twinfog",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
