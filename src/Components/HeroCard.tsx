@@ -1,4 +1,6 @@
-import { Card, CardContent, Typography, Button, Stack, Box } from '@mui/material'
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import { Box, Button, Card, CardContent, Stack, Typography } from '@mui/material'
 import HeroVisual from './HeroVisual'
 
 export default function HeroCard() {
@@ -39,11 +41,23 @@ export default function HeroCard() {
             </Typography>
 
             <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mt: 4 }}>
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                size="large"
+                startIcon={<LinkedInIcon />}
+                href="https://www.linkedin.com/in/florinchelaru/"
+                target="_blank"
+                rel="noopener noreferrer">
                 Let’s talk
               </Button>
 
-              <Button variant="text" size="large">
+              <Button
+                variant="text"
+                size="large"
+                startIcon={<CalendarMonthIcon />}
+                href="https://calendly.com/florin-chelaru/30min"
+                target="_blank"
+                rel="noopener noreferrer">
                 Book a 30-min intro call
               </Button>
             </Stack>
