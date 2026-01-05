@@ -1,26 +1,11 @@
-import React from 'react'
+import { Box, Card, CardContent, CardMedia, Container, Link, Typography } from '@mui/material'
 import Toolbar from '@mui/material/Toolbar'
-import {
-  Box,
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Container,
-  Link,
-  Stack,
-  Typography
-} from '@mui/material'
 import Grid2 from '@mui/material/Unstable_Grid2'
-import { withBaseURL } from '../util/string'
-import ByteBlitzLogo from '../Components/ByteBlitzLogo'
-import { Image } from '@mui/icons-material'
-import TwinfogLogo from '../Components/TwinfogLogo'
-import HeroCard from '../Components/HeroCard'
+import HeroComponent from '../Components/HeroComponent'
+import HowWeWorkCard from '../Components/HowWeWorkCard'
 import WhatWeDoCard from '../Components/WhartWeDoCard'
 import WhoWeWorkWithCard from '../Components/WhoWeWorkWithCard'
-import HowWeWorkCard from '../Components/HowWeWorkCard'
+import { withBaseURL } from '../util/string'
 
 export interface HomeProps {}
 
@@ -96,7 +81,7 @@ export default function Home({}: HomeProps) {
         <Toolbar />
         <Grid2 container spacing={2}>
           <Grid2 xs={12}>
-            <HeroCard />
+            <HeroComponent />
           </Grid2>
           <Grid2 xs={12}>
             <WhatWeDoCard />
