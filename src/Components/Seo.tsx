@@ -9,8 +9,9 @@ interface SeoFields {
 }
 
 const EN_US: SeoFields = {
-  title: 'ByteBlitz | Software Development',
-  description: 'TODO'
+  title: 'Twinfog | Senior Software Engineers',
+  description:
+    'Senior software engineers helping startups design, build, and own production-ready backend systems.'
 }
 
 const SEO_TEXTS = new Map<SupportedLocale, LocalizedData>([[SupportedLocale.EN_US, EN_US]])
@@ -25,13 +26,11 @@ export default function Seo() {
       <html lang={localeManager.locale.substring(0, 2)} />
       <meta charSet="utf-8" />
       <title>{componentStrings.title}</title>
-      <link rel="canonical" href={`https://twinfog-outsourcing.io/?hl=${localeManager.locale}`} />
+
+      <link rel="canonical" href={`https://twinfog.com/?hl=${localeManager.locale}`} />
       <meta name="description" content={componentStrings.description} />
       <meta property="og:title" content={componentStrings.title} />
-      <meta
-        property="og:url"
-        content={`https://twinfog-outsourcing.io/?hl=${localeManager.locale}`}
-      />
+      <meta property="og:url" content={`https://twinfog.com/?hl=${localeManager.locale}`} />
       <meta property="og:description" content={componentStrings.description} />
       <meta name="twitter:title" content={componentStrings.title} />
       <meta name="twitter:description" content={componentStrings.description} />

@@ -27,11 +27,11 @@ export interface HomeProps {}
 export default function Home({}: HomeProps) {
   const companyDescription = (
     <>
-      ByteBlitz excels at the rapid development journey, taking ideas from inception to MVP in
-      record time. Our adept team harnesses state-of-the-art, future-ready technologies to build
-      digital products with maximum impact at unprecedented speed. Swiftly validate your product
-      idea by incorporating the right features, attracting early adopter customers and investors to
-      propel your vision forward.
+      Twinfog excels at the rapid development journey, taking ideas from inception to MVP in record
+      time. Our adept team harnesses state-of-the-art, future-ready technologies to build digital
+      products with maximum impact at unprecedented speed. Swiftly validate your product idea by
+      incorporating the right features, attracting early adopter customers and investors to propel
+      your vision forward.
     </>
   )
 
@@ -39,7 +39,7 @@ export default function Home({}: HomeProps) {
     <>
       Committed to crafting high-quality products swiftly, I bring over 15 years of software
       development expertise. My journey includes successful roles as a Technical Lead in Vienna,
-      Austria, Senior Software Engineer in Linz, Austria, and co-founder of the ByteBlitz US-based
+      Austria, Senior Software Engineer in Linz, Austria, and co-founder of the Twinfog US-based
       parent company, <b>Twinfog</b>, which debuted as a location-based social platform aimed at
       nurturing communities of expats worldwide (
       <Link href="https://youtu.be/oINy4qSrMiM" target="_blank">
@@ -49,7 +49,7 @@ export default function Home({}: HomeProps) {
       <br />
       <br />
       As a hands-on leader, I lead and actively work alongside the dynamic team of software
-      engineers at <b>ByteBlitz</b>, where innovation meets efficient product development.
+      engineers at <b>Twinfog</b>, where innovation meets efficient product development.
     </>
   )
 
@@ -77,15 +77,15 @@ export default function Home({}: HomeProps) {
 
   const missionStatement = (
     <>
-      Empowering Visionaries, ByteBlitz is on a mission to transcend ideas into exceptional digital
+      Empowering Visionaries, Twinfog is on a mission to transcend ideas into exceptional digital
       realities. Our mission is clear: to seamlessly translate your vision into unparalleled digital
       experiences. Whether you&#39;re embarking on a new venture or elevating an existing project,
-      ByteBlitz offers comprehensive end-to-end solutions in digital design, development, and
-      scaling. We transcend the role of mere consultants, positioning ourselves as dedicated
-      partners navigating the ever-evolving landscape of digital products alongside you.
+      Twinfog offers comprehensive end-to-end solutions in digital design, development, and scaling.
+      We transcend the role of mere consultants, positioning ourselves as dedicated partners
+      navigating the ever-evolving landscape of digital products alongside you.
       <br />
       <br />
-      <b>ByteBlitz:</b> Where innovation meets commitment, ensuring your digital journey reaches new
+      <b>Twinfog:</b> Where innovation meets commitment, ensuring your digital journey reaches new
       heights.
     </>
   )
