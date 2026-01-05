@@ -8,12 +8,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo_balloon_marker-300.png",
+      "src": "logo-square-300.png",
       "type": "image/png",
       "sizes": "300x300"
     }
   ],
-  "start_url": "/",
+  "start_url": "/twinfog-outsourcing",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
