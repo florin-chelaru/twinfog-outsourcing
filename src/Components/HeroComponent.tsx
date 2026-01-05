@@ -56,8 +56,9 @@ export default function HeroComponent() {
         </Stack>
       </Box>
       <Box
+        display={{ xs: 'none', sm: 'block' }}
         position="absolute"
-        right={{ xs: -80, sm: 20, md: 20 }}
+        right={{ xs: 0, sm: 20, md: 20 }}
         top="50%"
         width={400}
         height={200}
