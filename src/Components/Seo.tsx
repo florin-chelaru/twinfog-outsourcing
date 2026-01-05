@@ -27,10 +27,16 @@ export default function Seo() {
       <meta charSet="utf-8" />
       <title>{componentStrings.title}</title>
 
-      <link rel="canonical" href={`https://florin-chelaru.github.io/twinfog/?hl=${localeManager.locale}`} />
+      <link
+        rel="canonical"
+        href={`https://florin-chelaru.github.io/twinfog-outsourcing/?hl=${localeManager.locale}`}
+      />
       <meta name="description" content={componentStrings.description} />
       <meta property="og:title" content={componentStrings.title} />
-      <meta property="og:url" content={`https://florin-chelaru.github.io/twinfog/?hl=${localeManager.locale}`} />
+      <meta
+        property="og:url"
+        content={`https://florin-chelaru.github.io/twinfog-outsourcing/?hl=${localeManager.locale}`}
+      />
       <meta property="og:description" content={componentStrings.description} />
       <meta name="twitter:title" content={componentStrings.title} />
       <meta name="twitter:description" content={componentStrings.description} />
