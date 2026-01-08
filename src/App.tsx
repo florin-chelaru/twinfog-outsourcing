@@ -31,7 +31,7 @@ function App() {
       <LocaleProvider>
         <AnnouncementProvider>
           <Seo />
-          <LocalizedCookieConsent />
+          {/* <LocalizedCookieConsent /> */}
           <DrawerAppBar navItems={navItems} />
           <Grid2 container>
             <Grid2 xs={12}>
