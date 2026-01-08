@@ -29,13 +29,13 @@ export default function Seo() {
 
       <link
         rel="canonical"
-        href={`https://florin-chelaru.github.io/twinfog-outsourcing/?hl=${localeManager.locale}`}
+        href={`https://twinfog.com/?hl=${localeManager.locale}`}
       />
       <meta name="description" content={componentStrings.description} />
       <meta property="og:title" content={componentStrings.title} />
       <meta
         property="og:url"
-        content={`https://florin-chelaru.github.io/twinfog-outsourcing/?hl=${localeManager.locale}`}
+        content={`https://twinfog.com/?hl=${localeManager.locale}`}
       />
       <meta property="og:description" content={componentStrings.description} />
       <meta name="twitter:title" content={componentStrings.title} />

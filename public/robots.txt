@@ -1,2 +1,2 @@
 # https://www.robotstxt.org/robotstxt.html
-Sitemap: https://florin-chelaru.github.io/twinfog-outsourcing/sitemap.txt
+Sitemap: https://twinfog.com/sitemap.txt
