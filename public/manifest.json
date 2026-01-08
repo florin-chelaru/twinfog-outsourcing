@@ -13,7 +13,7 @@
       "sizes": "300x300"
     }
   ],
-  "start_url": "/twinfog-outsourcing",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
