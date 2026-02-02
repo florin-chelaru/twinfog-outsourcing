@@ -1,6 +1,6 @@
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import { Box, Button, Stack, Typography } from '@mui/material'
+import { Box, Button, Link, Stack, Typography } from '@mui/material'
 import HeroVisual from './HeroVisual'
 
 export default function HeroComponent() {
@@ -21,7 +21,7 @@ export default function HeroComponent() {
             lineHeight: 1.1,
             fontWeight: 700
           }}>
-          Senior software engineers for US startups.
+          Senior software engineers for product-driven startups.
         </Typography>
 
         <Typography

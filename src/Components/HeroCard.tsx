@@ -32,7 +32,7 @@ export default function HeroCard() {
               maxWidth: 700
             }}>
             <Typography variant="h3" fontWeight={600} gutterBottom>
-              Senior software engineers for US startups
+              Senior software engineers for product-driven startups
             </Typography>
 
             <Typography variant="subtitle1" color="text.secondary" sx={{ mt: 2 }}>

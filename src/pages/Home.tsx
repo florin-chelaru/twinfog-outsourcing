@@ -24,9 +24,9 @@ export default function Home({}: HomeProps) {
     <>
       Committed to crafting high-quality products swiftly, I bring over 15 years of software
       development expertise. My journey includes successful roles as a Technical Lead in Vienna,
-      Austria, Senior Software Engineer in Linz, Austria, and co-founder of the Twinfog US-based
-      parent company, <b>Twinfog</b>, which debuted as a location-based social platform aimed at
-      nurturing communities of expats worldwide (
+      Austria, Senior Software Engineer in Linz, Austria, and co-founder of the Twinfog parent
+      company, <b>Twinfog</b>, which debuted as a location-based social platform aimed at nurturing
+      communities of expats worldwide (
       <Link href="https://youtu.be/oINy4qSrMiM" target="_blank">
         youtu.be/oINy4qSrMiM
       </Link>
